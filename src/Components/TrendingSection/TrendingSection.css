@@ -1,0 +1,48 @@
+.TrendingSection{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+margin-inline: auto;
+width: 60vw;
+height: 50vh;
+padding-left: 2rem;
+padding-top: 2rem;
+}
+
+.Trending-Column{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.selector{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap:2rem;
+border: 1px solid rgba(3,37,65);
+border-radius: 30px;
+font-size: 1em;
+}
+
+.background {
+    border-radius: 30px;
+    background-color: black;
+    color: #56c5ab;
+
+  }
+  
+.Trending{
+    display: flex;
+    flex-direction: row;
+    gap:1.2rem;
+    padding-top: 1.6rem;
+    overflow:scroll;
+    scroll-behavior: smooth;  
+    position: relative; 
+}
+ 
+
+
+::-webkit-scrollbar{
+    display: none;
+}

@@ -1,0 +1,77 @@
+.Discover{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+margin-inline: auto;
+background-color: black;
+width: 60vw;
+height: 32vh;
+/* align-items: center; */
+overflow: hidden;
+justify-content: center;
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+position: relative;
+}
+
+.backdrop{
+    background-size: cover;
+    opacity: .9;
+
+
+
+}
+
+
+.title{
+padding-left: 2vw;
+
+    color: #FFF;
+    font-weight: 600;
+    position: absolute;
+    top:80px; 
+    
+}
+
+.search{
+    position: absolute;
+    top:216px;
+    margin-left: 2vw; 
+    background-color: white;
+width: 56vw;
+height: 4.8vh;
+display: flex;
+flex-direction: row;
+border-radius: 30px;
+justify-content: space-between;
+overflow: hidden;
+padding-left: 20px;
+
+
+}
+
+input{
+/* border-radius: 30px; */
+border: none;
+outline: none;
+height: 4.8vh;
+/* width: 100vw; */
+width: 52vw;
+font-weight: 600;
+font-size: 14px;
+
+}
+
+
+.button{
+    outline: none;
+    border-radius: 30px;
+    padding: 0 20px;
+    border: none;
+    font-weight: 600;
+font-size: 14px;
+background: linear-gradient(to right, rgba(30, 213, 169, 1) 0%, rgba(1, 180, 228, 1) 100%);
+color: #FFF;
+
+}
+

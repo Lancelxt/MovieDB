@@ -1,0 +1,43 @@
+.Footer{
+    background-color: #032541;
+    height: 28vh;
+    width: 100vw;
+    padding-top: 48px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    gap:28px;
+/* border:1px solid #FFF; */
+   justify-content: center;
+    color: #FFF;
+    }
+
+    .logo{
+        height: 105px;
+        width: 208px;
+    }
+
+    .username{
+        background-color: #FFF;
+        color:rgba(1,180,228);
+        font-size: 1.3em;
+        font-weight: 600;
+        padding: 8px 16px;
+        border:2px solid #FFF;
+        width: 140px;
+        border-radius: 5px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        margin-left: 36px;
+        margin-top: 20px;
+    }
+
+    .columns{
+        padding-top: 40px;
+    }
+
+    li{
+        list-style-type: none;
+    }
