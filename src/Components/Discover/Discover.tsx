@@ -12,6 +12,8 @@ const Discover = () => {
   const [query, setQuery] = useState("");
     const navigate= useNavigate();
 
+    const linearGradient = `linear-gradient(to bottom, rgba(3, 37, 65, 0.85), rgba(3, 37, 65, 0.85)), url(${background})`;
+
 
   const searchQueryHandler = (event:React.KeyboardEvent<HTMLInputElement>) => {
     if(event.key ==="Enter" && query.length>0) {
@@ -42,7 +44,9 @@ const Discover = () => {
   return (
     <div className="Discover backdrop">
         
-    <img src={background} alt="backdrop" loading="lazy" />
+    
+   {/* <div src={background} alt="backdrop" loading="lazy" /> */}
+   <div className="backdrop" data-img-url={background} style={{backgroundSize:"cover",backgroundImage:linearGradient,height:"42vw",width:"60vw",}}></div>
     {/* <Img
         className="backdrop"
         src={background}

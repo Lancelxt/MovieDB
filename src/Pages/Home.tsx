@@ -2,8 +2,8 @@ import React from 'react'
 import Header from '../Components/Header/Header'
 import Discover from '../Components/Discover/Discover'
 import TrendingSection from '../Components/TrendingSection/TrendingSection'
-import FreeToWatch from '../Components/FreeToWatch/FreeToWatch'
 import Footer from '../Components/Footer/Footer'
+import Popular from '../Components/Popular/Popular'
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
     <div>
     <Discover/>
     <TrendingSection title='Trending'/>
-    {/* <FreeToWatch title='Free To Watch'/> */}
+    <Popular title="Popular"/>
     </div>
     <Footer/>
     </>
