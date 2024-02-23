@@ -3,7 +3,16 @@ import { fetchDataFromApi } from "../utils/api";
 
 // Define the type for your API response
 interface ApiResponse {
-    results:any    
+    results:any    ;
+    backdrop_path:string;
+    poster_path:string;
+    title:string;
+    vote_average:number;
+    overview:string;
+    crew:string;
+    job:string;
+    tagline:string;
+
 }
 
 // Define the type for your state
@@ -20,6 +29,15 @@ const useFetch = (url: string) => {
     error: null
   });
 
+  const refetch=(refetchUrl?:string)=>{
+    if(!refetchUrl){
+      fetchDataFromApi(url)
+      return
+    }
+    fetchDataFromApi(refetchUrl)
+
+  }
+
   useEffect(() => {
     setState({ data: null, loading: "loading...", error: null });
 
@@ -32,7 +50,7 @@ const useFetch = (url: string) => {
       });
   }, [url]);
 
-  return state;
+  return {refetch,...state};
 };
 
 export default useFetch;

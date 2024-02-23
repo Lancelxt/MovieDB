@@ -3,6 +3,8 @@
     height: 32vh;
     width: 100vw;
     padding-top: 48px;
+    position: absolute;
+    /* bottom: 0; */
 }
 .wrapper{
     display: flex;

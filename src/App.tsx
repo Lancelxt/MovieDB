@@ -6,6 +6,7 @@ import { getApiConfiguration } from './Store/homeSlice';
 import {HomeState} from './Store/homeSlice'; // Import the HomeState type
 import { Route, Routes, } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
+import Details from './Pages/Details/Details';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -37,6 +38,9 @@ const App = () => {
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home/>} />
+      <Route path='*' element={<Home/>} />
+
+      <Route path='/:media_type/:id' element={<Details/>} />
     </Routes>
     </BrowserRouter>
   );
