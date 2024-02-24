@@ -1,0 +1,27 @@
+.social-btns-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.social-btns{
+    cursor: pointer;
+}
+
+.queries{
+    display: flex;
+    flex-direction: column;
+    /* gap:20px; */
+}
+
+.query{
+    padding-top: 20px;
+}
+
+.keyword-container{
+    padding-top:20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}

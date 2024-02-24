@@ -1,0 +1,142 @@
+.media{
+    margin-left: 260px;
+    padding-top: 40px;
+    border-bottom: 1px solid #d7d7d7;
+    padding-bottom: 20px;
+    /* margin-bottom: 200px; */
+    width: 1000px;
+
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+    align-items: center;
+}
+
+.tabs{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+
+}
+.tabs p{
+    cursor: pointer;
+}
+
+.active{
+    border-bottom: 4px solid #032541;
+
+}
+
+
+.review-container{
+    border: 1px solid rgb(227,227,227);
+    height: 208px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    margin-top: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:12px
+}
+.rating{
+border: 1px solid black;
+background-color: black;
+color:#FFF;
+padding: 1px 8px 1px 6px;
+align-items: center;
+justify-content: center;
+gap: 4px;
+display: flex;
+flex-direction: row;
+border-radius: 24px;
+font-weight: 600;
+font-size: 14.4px;
+
+}
+
+.authordetails{
+    display: flex;
+    flex-direction: row;
+    gap:8px;
+}
+
+.author{
+    font-size: 14.4px;
+    font-weight: 300;
+    color: #000;
+}
+
+.userdetail{
+    font-size: 20.8px;
+    font-weight: 700;
+}
+
+.review-content{
+    font-size: 16px;
+    text-align: justify;
+    color:#000
+}
+
+.readAll{
+    font-size:17.6px;
+    font-weight:600;
+    margin-top:20px;
+    cursor: pointer;
+
+}
+
+.readAll:hover{
+    color:#868383
+}
+
+.pfp{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    gap:16px;
+}
+
+.discussion-container{
+    height: 62px;
+    border: 1px solid rgb(227,227,227);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    margin-top: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px
+    
+}
+
+.popular-section{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    overflow: scroll;
+    /* border-radius: 8px; */
+    padding-top: 16px;
+    align-items: center;
+}
+
+.video-thumbnail{
+    position: relative;
+    cursor: pointer;
+}
+
+.play-circle{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: 4;
+}

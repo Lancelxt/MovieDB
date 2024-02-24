@@ -1,0 +1,14 @@
+.keywords{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 50%;
+    gap:6px;
+}
+.keyword{
+    padding:4px 10px;
+    border:1px solid #d7d7d7;
+    background-color: rgba(0,0,0,.1);
+    color: #000;
+    border-radius: 4px;
+}

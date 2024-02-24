@@ -12,6 +12,20 @@ interface ApiResponse {
     crew:string;
     job:string;
     tagline:string;
+    name:string;
+    release_date:string;
+    genres:any;
+    runtime:number;
+    cast:any;
+    author_details:any;
+    backdrops:any;
+    posters:any;
+    status:string;
+    original_language:string;
+    budget:number;
+    revenue:number;
+    keywords:any;
+    
 
 }
 
