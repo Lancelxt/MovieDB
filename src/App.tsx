@@ -15,6 +15,7 @@ const App = () => {
 
   useEffect(() => {
     fetchApiConfig();
+    setupGlobalErrorHandling();
   }, []);
 
   const fetchApiConfig = async () => {
@@ -31,6 +32,19 @@ const App = () => {
     } catch (error) {
       console.error('Error fetching data:', error);
     }
+  };
+
+
+  const setupGlobalErrorHandling = () => {
+    window.addEventListener('error', handleGlobalError);
+    return () => {
+      window.removeEventListener('error', handleGlobalError);
+    };
+  };
+
+  const handleGlobalError = (event: ErrorEvent) => {
+    console.error('Global error occurred:', event.error);
+    window.location.href = '/'; 
   };
 
   return (
