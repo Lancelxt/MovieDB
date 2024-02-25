@@ -9,7 +9,7 @@ import './Home.css'
 
 const Home = () => {
   return (
-    <>
+    <div className='Home'>
     <Header/>
     <div>
     <Discover/>
@@ -38,7 +38,7 @@ const Home = () => {
     </div>
     </div>
     <Footer/>
-    </>
+    </div>
   )
 }
 

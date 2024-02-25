@@ -59,6 +59,9 @@
 }
 
 @media screen and (max-width:500px) {
+    .Home{
+        overflow-x: hidden;
+    }
     .joinToday{
         width: 100vw;
         flex-direction: column;
