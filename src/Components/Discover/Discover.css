@@ -3,8 +3,8 @@
     flex-direction: column;
     margin-top: 0;
 margin-inline: auto;
-/* background-color: black; */
 width: 60vw;
+/* width: 60vw; */
 height: 32vh;
 /* align-items: center; */
 overflow: hidden;
@@ -16,7 +16,8 @@ position: relative;
 
 .backdrop{
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 
@@ -73,3 +74,33 @@ color: #FFF;
 
 }
 
+.backdrop{
+    height:42vh;
+    width:60vw;
+}
+
+@media screen and (max-width:500px) {
+    .Discover{
+        width: 100vw;
+        /* height: 75vh; */
+    }
+    .Discover .backdrop{
+        width: 100vw;
+        height: 75vh; 
+    }
+
+    .title{
+        top:50px;
+        left:16px;
+        overflow-x: hidden;
+    }
+
+    .search{
+        top:280px;
+        left:20px;
+        width: 80vw;
+        overflow-x: hidden;
+
+        
+    }
+}

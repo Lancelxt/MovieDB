@@ -39,6 +39,10 @@ font-size: 1em;
     overflow:scroll;
     scroll-behavior: smooth;  
     position: relative; 
+    background-image: url(https://www.themoviedb.org/assets/2/v4/misc/trending-bg-39afc2a5f77e31d469b25c187814c0a2efef225494c038098d62317d923f8415.svg);
+    background-repeat:round;
+    background-position: bottom;
+    transition: height .5s linear;
 }
  
 /* .fade{
@@ -54,4 +58,27 @@ font-size: 1em;
 
 ::-webkit-scrollbar{
     display: none;
+}
+
+
+
+@media screen and (max-width:500px) {
+    .TrendingSection{
+        margin-left: 0px;
+    }
+
+    .Trending{
+        width: 360px;
+    }
+
+    .Trending-Column{
+        flex-direction: column;
+        align-items:start;
+        gap:4px;
+
+    }
+
+    .switchingTabs .tabItems{
+        margin-left: -28px;
+    }
 }

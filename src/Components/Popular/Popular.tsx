@@ -26,12 +26,11 @@ const [poster,setPoster] = useState("")
 
   const handleTabChange = (tabIndex: number) => {
     setTab(tabIndex);
-    // You can perform additional actions based on the selected tab index if needed
   };
 
 
     const onTabChange = (tab: string) => {
-    // Set endpoint based on the selected tab
+
     switch (tab) {
       case "Streaming":
         setEndpoint("/movie/now_playing");
@@ -63,7 +62,7 @@ const [poster,setPoster] = useState("")
             },
           }
         );
-        console.log(response.data);
+        
       } catch (error) {
         console.error(error);
       }
@@ -91,11 +90,10 @@ const [poster,setPoster] = useState("")
         <SwitchTabs data={["Streaming", "On TV","For Rent","In Theaters"]} onTabChange={onTabChange} />
       </div>
       <div className="Popular">
-  {data && Array.isArray(data.results) && // Check if data and data.results are defined and data.results is an array
+  {data && Array.isArray(data.results) &&
     data.results.map((movie) => (
       <MovieCard key={movie.id} movie={movie} />
     ))}
-    <div className="fade"></div>
 </div>
     </div>
   );

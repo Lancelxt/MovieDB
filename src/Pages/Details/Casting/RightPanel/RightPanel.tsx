@@ -1,9 +1,10 @@
 import React from 'react'
 import './RightPanel.css'
-import { Facebook, Instagram, Link, Twitter } from 'react-bootstrap-icons'
+import { ExclamationCircle, Facebook, Instagram, Keyboard, KeyboardFill, Link, Twitter } from 'react-bootstrap-icons'
 import useFetch from '../../../../Hooks/useFetch'
 import { useParams } from 'react-router'
 import Keywords from './Keywords'
+import EditButton from './EditButton'
 const RightPanel = () => {
   const {id,media_type}=useParams() 
     const {data:queryData} = useFetch("/"+media_type+"/"+id)
@@ -39,6 +40,15 @@ const RightPanel = () => {
         <div className="keyword-container">
             <p style={{fontSize:"17.6px",fontWeight:600,color:"#000"}}>Keywords</p>
         <Keywords/>
+        <EditButton/>
+        <div className="shortcut">
+          <KeyboardFill size={20}/>
+          Keyboard Shortcut
+        </div>
+        <div className="shortcut">
+          <ExclamationCircle size={20}/>
+          Report an issue
+        </div>
         </div>
 
     </div>

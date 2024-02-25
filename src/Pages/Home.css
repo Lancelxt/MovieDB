@@ -1,0 +1,73 @@
+.joinToday{
+    height: 330px;
+    width: 1330px;
+    margin-inline: auto;
+    border:0px solid #805be7;
+    background-image: url('');
+    padding: 30px 40px;
+    /* background-color: purple; */
+    /* background-image: url(https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces_filter\(duotone,190235,ad47dd\)/lMnoYqPIAVL0YaLP5YjRy7iwaYv.jpg); */
+    background-image: url(https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces_filter\(duotone,190235,ad47dd\)/lMnoYqPIAVL0YaLP5YjRy7iwaYv.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.join-content em{
+    font-weight: 300;
+    
+}
+
+.button2{
+    display: flex;
+    background-color: rgb(128,91,231);
+    padding: 8px 16px;
+    font-size: 17.28px;
+    font-weight: 600;
+    color: #FFF;
+    width: 93.2px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.left-content{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 720px;
+}
+
+.right-content{
+    padding-top: 68px;
+}
+
+
+.right-content li{
+    /* color:#d2d2d2 */
+    font-weight: 300;
+    color:#FFF;
+    list-style: disc;
+}
+
+@media screen and (max-width:500px) {
+    .joinToday{
+        width: 100vw;
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 0px ;
+    }
+
+    .left-content{
+        width: 80vw;
+    }
+
+    .right-content{
+        padding-top: 0px;
+    }
+}

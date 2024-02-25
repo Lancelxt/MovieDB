@@ -14,9 +14,6 @@ import './Details.css'
 const Details = () => {
 
   const {id,media_type}=useParams()
-  console.log("dsd",id)
-
-
   const { data, loading, error ,refetch} = useFetch("/"+media_type+"/"+id);
 
   useEffect(() => {

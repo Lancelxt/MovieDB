@@ -10,7 +10,7 @@ position: relative;
 
 .backdrop2{
     background-size: cover;
-    filter: blur(4px);
+    /* filter: blur(4px); */
 
 }
 

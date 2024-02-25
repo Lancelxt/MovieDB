@@ -6,7 +6,6 @@ import useFetch from '../../../Hooks/useFetch';
 import avatar from './avatar.png';
 import { ArrowRightCircleFill, ArrowRightShort } from 'react-bootstrap-icons';
 
-// Define types for the cast details
 interface CastDetails {
   profile_path: string | null;
   character: string;

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./TrendingSection.css";
+import "./FreeToWatch.css";
 import SwitchTabs from "../SwitchTabs/SwitchTabs";
 import MovieCard from "../MovieCard/MovieCard";
 import axios from "axios";
@@ -12,7 +12,7 @@ interface TrendingSectionProps {
   
 }
 
-const TrendingSection: React.FC<TrendingSectionProps> = ({ title}) => {
+const FreeToWatch: React.FC<TrendingSectionProps> = ({ title}) => {
   const [endpoint, setEndpoint] = useState<string>("day");
 
   const [tab, setTab] = useState<number>(0);
@@ -66,12 +66,12 @@ const [poster,setPoster] = useState("")
 
 
   return (
-    <div className="TrendingSection">
-      <div className="Trending-Column">
+    <div className="FreeToWatchSection">
+      <div className="ftw-Column">
         <h2 style={{ marginRight: "2rem", fontWeight: "500" }}>{title}</h2>
         <SwitchTabs data={["Day", "Week"]} onTabChange={onTabChange} />
       </div>
-      <div className="Trending" >
+      <div className="FreeToWatch" >
   {data && Array.isArray(data.results) && 
     data.results.map((movie) => (
       <MovieCard key={movie.id} movie={movie} />
@@ -81,4 +81,4 @@ const [poster,setPoster] = useState("")
   );
 };
 
-export default TrendingSection;
+export default FreeToWatch;

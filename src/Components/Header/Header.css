@@ -15,6 +15,12 @@ justify-content: center;
 color:#FFF;
 font-weight: 600;
 }
+
+.left p{
+    cursor: pointer;
+}
+
+
 .right{
 display: flex;
 flex-direction: row;
@@ -29,4 +35,38 @@ font-weight: 600;
     border: 1px solid #FFF;
     padding: 2px 4px;
     border-radius: 3px;
+}
+
+.lang:hover{
+    background-color: #FFF;
+    color:#000;
+    transition: 0.3s ease-in;
+}
+
+.right p, .right img{
+    cursor: pointer;
+}
+
+.button{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:500px) {
+    .Header {
+        overflow-x: hidden; /* Add this line to prevent horizontal scrolling */
+        padding-inline: 120px;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .left > *:not(:first-child) {
+        display: none;
+    }
+
+    .left img {
+        
+    }
 }

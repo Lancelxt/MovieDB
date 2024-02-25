@@ -1,0 +1,16 @@
+.edit-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#FFF;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 28px;
+    border: 1px solid rgba(241.5, 10.5, 115.5, 1);
+    border-radius: 32px;
+    width: 116px;
+    height: 36px;
+    background-color: rgba(241.5, 10.5, 115.5, 1);
+    cursor: pointer;
+    
+}

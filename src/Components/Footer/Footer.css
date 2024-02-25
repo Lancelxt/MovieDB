@@ -15,20 +15,10 @@
     color: #FFF;
     }
 
-    .image-column{
-        flex-direction: column;
-        /* border: 2px solid white; */
-        padding-left: 200px;
-        /* margin-top: -20px; */
-        /* height: 105px; */
-        /* width: 208px; */
-
-    }
-
     .logo{
-        
-        /* margin-left: 100px; */
-        
+        width: 130px;
+        height: 94px;
+        margin-left: 100px;
     }
 
     .username{
@@ -53,4 +43,30 @@
 
     li{
         list-style-type: none;
+    }
+
+
+
+    @media screen and (max-width:500px) {
+        .Footer{
+            overflow-x: hidden;
+            height: auto;
+        }
+
+        .wrapper{
+            display: block;
+            gap:0px;
+            padding-inline: 40px;
+            padding-bottom: 40px;
+        }
+
+        .logo{
+            margin-left: 0px;
+        }
+
+        .username{
+            width: 134px;
+            font-size: 0.6em;
+        }
+        
     }

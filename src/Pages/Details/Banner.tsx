@@ -25,12 +25,8 @@ const Discover = ({video}:DiscoverProps) => {
 
 
   const {data:videoData} = useFetch("/"+media_type+"/"+id+"/videos")
-
-
-
     const navigate= useNavigate();
-
-    const linearGradient = `linear-gradient(to left,rgba(3, 37, 65, 0.85), rgba(3, 37, 65, 0.85)),url(${background})`; 
+    const linearGradient = `linear-gradient(to left,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(${background})`; 
 
 
   const searchQueryHandler = (event:React.KeyboardEvent<HTMLInputElement>) => {
@@ -42,8 +38,6 @@ const Discover = ({video}:DiscoverProps) => {
   const { url } = useSelector((state: { home: HomeState }) => state.home);
   const { data, loading, error } = useFetch("/"+media_type+"/"+id);
   const { data:crewData, loading:crewLoading, error:crewError } = useFetch("/"+media_type+"/"+id+"/credits");
-
-  // const poster= data?.results.poster_path
 
   useEffect(() => {
     const bg =
@@ -70,14 +64,8 @@ const runtimeInMinutes = (data?.runtime?? 0) % 60;
 
   return (
     <div className="Banner">
-        
-    
-   {/* <div src={background} alt="backdrop" loading="lazy" /> */}
    <div className="backdrop2" data-img-url={background} style={{backgroundSize:"cover",backgroundImage:linearGradient,height:"570px",width:"100%",}}></div>
-    {/* <Img
-        className="backdrop"
-        src={background}
-        /> */}
+  
         <div className="banner-content">
         <div className="poster">
           <img src={posterImg} alt="poster" style={{borderRadius: "8px"}} />
@@ -126,7 +114,6 @@ const runtimeInMinutes = (data?.runtime?? 0) % 60;
       <div className="overview">
         <div className="heading" style={{fontWeight:600,marginBottom:"4px",fontSize:"20.8px"}}>Overview</div>
         {data?.overview}
-        {/* {crew?.crew} */}
       </div>
 
     <div className="crew-details">

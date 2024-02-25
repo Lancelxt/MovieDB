@@ -3,15 +3,14 @@ import Home from './Pages/Home';
 import { fetchDataFromApi } from './utils/api';
 import { useDispatch, useSelector } from 'react-redux';
 import { getApiConfiguration } from './Store/homeSlice';
-import {HomeState} from './Store/homeSlice'; // Import the HomeState type
+import {HomeState} from './Store/homeSlice'; 
 import { Route, Routes, } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import Details from './Pages/Details/Details';
 
 const App = () => {
   const dispatch = useDispatch();
-  const {url} = useSelector((state: {home : HomeState}) => state.home); // Use HomeState type for state
-  console.log(url)
+  const {url} = useSelector((state: {home : HomeState}) => state.home); 
 
   useEffect(() => {
     fetchApiConfig();
@@ -20,7 +19,6 @@ const App = () => {
   const fetchApiConfig = async () => {
     try {
       const res = await fetchDataFromApi('/configuration');
-      console.log(res);
 
       const url = {
         backdrop:res.images.secure_base_url + "original",

@@ -1,12 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// Define the HomeState type
 export interface HomeState {
   url: any;
   genres: any;
 }
 
-// Create the home slice
 export const homeSlice = createSlice({
   name: "home",
   initialState: {
@@ -23,8 +21,5 @@ export const homeSlice = createSlice({
   },
 });
 
-// Export action creators
 export const { getApiConfiguration, getGenres } = homeSlice.actions;
-
-// Export reducer
 export default homeSlice.reducer;

@@ -8,18 +8,14 @@ import { HomeState } from '../../../Store/homeSlice';
 import avatar from './avatar.png'
 
 interface SocialProps {
-  // Add any props you need for your component
+
 }
 
 const Social: React.FC<SocialProps> = () => {
   const [activeTab, setActiveTab] = useState<'reviews' | 'discussions'>('reviews');
   const { media_type, id } = useParams<{ media_type: string; id: string }>();
   const { data: reviewData } = useFetch("/" + media_type + "/" + id + "/reviews");
-
   const { url } = useSelector((state:HomeState) => state);
-console.log("jkjk",reviewData)
-
-  console.log(reviewData);
   const review = reviewData?.results ? reviewData?.results[0] : {};
 
   const formatDate = (dateString: string) => {
@@ -33,25 +29,20 @@ console.log("jkjk",reviewData)
     setActiveTab(tab);
   };
   
-
-console.log(reviewData?.author_details?.avatar_path)
-console.log(url)
-
-
   return (
     <div className='social'>
       <div className="head">
         <p style={{ fontSize: "22.4px", fontWeight: 600, color: "#000" }}>Social</p>
-        <div className="tabs">
+        <div className="tabs2">
           <p
-            className={activeTab === 'reviews' ? 'active' : ''}
+            className={activeTab === 'reviews' ? 'active2' : ''}
             style={{ fontSize: "17.6px", fontWeight: 600, color: "#000" }}
             onClick={() => handleTabClick('reviews')}
           >
             Reviews
           </p>
           <p
-            className={activeTab === 'discussions' ? 'active' : ''}
+            className={activeTab === 'discussions' ? 'active2' : ''}
             style={{ fontSize: "17.6px", fontWeight: 600, color: "#000" }}
             onClick={() => handleTabClick('discussions')}
           >
@@ -61,8 +52,6 @@ console.log(url)
       </div>
       {activeTab === 'reviews' && (
         <div>
-
-          {/* Render reviews content here */}
         <div className="review-container">
             <div className="info">
                 <img className='pfp' src={review?.author_details?.avatar_path ? `https://image.tmdb.org/t/p/original/${review?.author_details?.avatar_path}` : `${avatar}`}/>
@@ -78,8 +67,8 @@ console.log(url)
                 </div>
             </div>
             <div className="review-content">
-            {review?.content && review.content.split(' ').slice(0, 100).join(' ')}
-  {review?.content && review.content.split(' ').length > 100 && '...'}
+            {review?.content && review.content.split(' ').slice(0, 60).join(' ')}
+  {review?.content && review.content.split(' ').length > 60 && '...'}
   <a style={{color:"#000"}} href={review?.url}>
   <span style={{textDecoration:"underline"}}>read the rest</span></a>
             </div>
@@ -100,7 +89,6 @@ console.log(url)
     <p style={{fontSize:"14.4px",fontWeight:500}}><span style={{fontSize:"14.4px",fontWeight:400}}>by </span>{review?.author}</p>
   </div>
           </div>
-          {/* Render discussions content here */}
         </div>
       )}
     </div>

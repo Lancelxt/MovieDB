@@ -1,4 +1,4 @@
-.PopularSection{
+.FreeToWatchSection{
     width: 60vw;
     display: flex;
     flex-direction: column;
@@ -6,10 +6,10 @@ margin-inline: auto;
 width: 60vw;
 height: 50vh;
 padding-left: 2rem;
-padding-top: 2rem;
+/* padding-top: 2rem; */
 }
 
-.Popular-Column{
+.ftw-Column{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,7 +24,6 @@ border-radius: 30px;
 font-size: 1em;
 }
 
-
 .background {
     border-radius: 30px;
     background-color: black;
@@ -32,39 +31,46 @@ font-size: 1em;
 
   }
   
-  .Popular {
+.FreeToWatch{
     display: flex;
     flex-direction: row;
-    gap: 1.2rem;
+    gap:1.2rem;
     padding-top: 1.6rem;
-    overflow-y: scroll;
-    position: relative;
+    overflow:scroll;
+    scroll-behavior: smooth;  
+    position: relative; 
+    /* background-image: url(https://www.themoviedb.org/assets/2/v4/misc/trending-bg-39afc2a5f77e31d469b25c187814c0a2efef225494c038098d62317d923f8415.svg); */
+    background-repeat:round;
+    background-position: bottom;
+    transition: height .5s linear;
 }
-
-
-
-.fade {
-    box-shadow: -140px 0 40px rgba(255, 255, 255, 1);
-    height: 100%;
-    width: 120px;
+ 
+/* .fade{
+    background-color: white;
+    opacity: 0.5;
+    height: 100vh;
+    width: 10vw;
     position: absolute;
-    right: -200px;
+    
+    right: 0px;
     bottom: 10%;
-    opacity: 1; /* Initial opacity */
-    transition: opacity 0.3s ease; /* Transition effect */
+} */
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 
 @media screen and (max-width:500px) {
-    .PopularSection{
+    .FreeToWatchSection{
         margin-left: 0px;
     }
 
-    .Popular{
+    .FreeToWatch{
         width: 360px;
     }
 
-    .Popular-Column{
+    .ftw-Column{
         flex-direction: column;
         align-items:start;
         gap:4px;

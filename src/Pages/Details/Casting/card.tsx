@@ -1,7 +1,6 @@
 import React from 'react'
 import './card.css'
 
-// credits detail
 type CardProps = {
     castImg:string;
     character:string;

@@ -8,7 +8,7 @@ interface MovieCardProps {
     title: string;
     release_date: string;
     poster_path: string;
-    vote_average: number; // Corrected property name
+    vote_average: number; 
     id:number;
     media_type:string;
   };
@@ -16,8 +16,6 @@ interface MovieCardProps {
 
 const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
   const { title, release_date, poster_path, vote_average,id,media_type } = movie;
-
-  // Convert vote_average to percentage format (e.g., 6.02 => 60.2)
   const percentageRating = Math.round(vote_average * 10)
 
 
@@ -27,14 +25,12 @@ const handleNavigate = ()=> {
 navigate('/'+media_type+"/"+id)
 }
 
-  // Format release date to "MMM DD, YYYY" format
   const formattedReleaseDate = new Date(release_date).toLocaleDateString('en-US', {
     month: 'short',
     day: 'numeric',
     year: 'numeric',
   });
 
-  // Construct the full poster URL using the base URL and the poster_path
   const posterUrl = `https://image.tmdb.org/t/p/w500${poster_path}`;
   
   return (
@@ -42,14 +38,12 @@ navigate('/'+media_type+"/"+id)
       <div className="imageContainer">
         <img src={posterUrl} alt='Movie Banner' onClick={handleNavigate}/>
         <div className="consensus">
-          {/* Pass the percentageRating to CircleRating component */}
           <CircleRating rating={Number(percentageRating)} />
         </div>
       </div>
       <div className="content" onClick={handleNavigate}>
         <div style={{ paddingTop: "1rem", display: "flex", flexDirection: "column"}}>
           <h2 style={{ fontSize: "1em" }}>{title}</h2>
-          {/* Display formatted release date */}
           <p style={{ color: "rgba(0,0,0,.6)", fontSize: "1em" }}>{formattedReleaseDate}</p>
         </div>
       </div>

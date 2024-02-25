@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { fetchDataFromApi } from "../utils/api";
 
-// Define the type for your API response
 interface ApiResponse {
     results:any    ;
     backdrop_path:string;
@@ -29,7 +28,6 @@ interface ApiResponse {
 
 }
 
-// Define the type for your state
 interface State {
   data: ApiResponse | null;
   loading: boolean | string | null;

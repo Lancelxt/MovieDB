@@ -28,31 +28,17 @@ const Discover = () => {
 
   useEffect(() => {
       const bg =
-          url.backdrop +
-          data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
+      'https://image.tmdb.org/t/p/original' +
+          data?.results?.[Math.floor(Math.random() * 20)].backdrop_path;
       setBackground(bg);
   }, [data]);
 
-
-//   const backdrop = {
-//     backgroundImage: `url(${background})`,
-//     // backdropFilter:"blur(10%)",
-//     backgroundSize:"Cover",
-
-
-//   };
+  // console.log("sd",background)
   return (
     <div className="Discover backdrop">
         
     
-   {/* <div src={background} alt="backdrop" loading="lazy" /> */}
-   <div className="backdrop" data-img-url={background} style={{backgroundSize:"cover",backgroundImage:linearGradient,height:"42vw",width:"60vw",}}></div>
-    {/* <Img
-        className="backdrop"
-        src={background}
-        /> */}
-        
-        
+   <div className="backdrop" style={{backgroundSize:"cover",backgroundImage:linearGradient}}></div>      
       <div className="title">
         <h2 style={{ fontSize: "3em", fontWeight: 700 }}>Welcome.</h2>
         <h3 style={{ fontSize: "2em", fontWeight: 600 }}>
