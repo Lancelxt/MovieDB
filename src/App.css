@@ -1,0 +1,31 @@
+@media screen and (max-width:1366px) {
+    .backdrop{
+        width: 100vw;
+    }
+    .search{
+        width: 92vw;
+    }
+
+    .TrendingSection{
+        width: 100vw;
+    }
+    .PopularSection{
+        width: 100vw;
+    }
+    .FreeToWatchSection{
+        width: 100vw;
+    }
+    .Casting, .social ,.media, .recommendations{
+        margin-left: 40px;
+    }
+    .Casting{
+        margin-left: 40px;
+        padding-top: 8px;
+    }
+    .Casting{
+        margin-left: 40px;
+    }
+    .Casting{
+        margin-left: 40px;
+    }
+}

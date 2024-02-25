@@ -7,6 +7,7 @@ import {HomeState} from './Store/homeSlice';
 import { Route, Routes, } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import Details from './Pages/Details/Details';
+import './App.css'
 
 const App = () => {
   const dispatch = useDispatch();
