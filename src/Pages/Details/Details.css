@@ -3,3 +3,48 @@
     flex-direction: row;
     gap:80px;
 }
+
+
+@media screen and (max-width:500px) {
+    .right-panel{
+        display: none;
+    }
+
+    .Casting{
+        margin-left: 12px;
+        width: 92vw;
+    }
+
+    .casts{
+        width: 92vw;
+    }
+    .social{
+        margin-left: 12px;
+        width: 92vw;
+    }
+
+    .popular-section{
+        width: 94vw;
+    }
+    .casts{
+        overflow-x: scroll;
+
+    }
+    .recommendations{
+        width: 92vw;
+        margin-left: 12px;
+    }
+    .media{
+        margin-left: 12px;
+        width: 100vw;
+
+    }
+    .head{
+        gap:12px;
+    }
+    .tabs2{
+        gap:12px
+    }
+}
+
+

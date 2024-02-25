@@ -64,7 +64,7 @@ const runtimeInMinutes = (data?.runtime?? 0) % 60;
 
   return (
     <div className="Banner">
-   <div className="backdrop2" data-img-url={background} style={{backgroundSize:"cover",backgroundImage:linearGradient,height:"570px",width:"100%",}}></div>
+   <div className="backdrop2" data-img-url={background} style={{backgroundSize:"cover",backgroundImage:linearGradient}}></div>
   
         <div className="banner-content">
         <div className="poster">
@@ -72,7 +72,7 @@ const runtimeInMinutes = (data?.runtime?? 0) % 60;
         </div>
         <div className="right-wrapper">
       <div className="title2">
-        <p style={{ fontSize: "35.2px", fontWeight: 700 ,color:"#FFF"}}>{data?.title} ({releaseYear})</p>
+        <p style={{}}>{data?.title} ({releaseYear})</p>
         <div className="facts">
           <div className="certification" style={{border:"1px solid rgba(255,255,255,0.6)",color:"rgba(255,255,255,0.6)",fontSize:"14px",padding:"2px 8px"}}>PG-13</div>
           <div className="release" style={{fontSize:"16px",fontWeight:300,color:"rgba(255,255,255,0.6)"}}>01/12/2024(US)</div>

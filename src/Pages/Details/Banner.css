@@ -11,7 +11,8 @@ position: relative;
 .backdrop2{
     background-size: cover;
     /* filter: blur(4px); */
-
+    background-position: center center;
+    width: 100vw;
 }
 
 
@@ -29,6 +30,12 @@ position: relative;
 
     /* position: absolute; */
     left: 300px;
+}
+
+.title2 p{
+    font-size: 35.2px;
+     font-weight: 700;
+    color:#FFF;
 }
 
 .facts{
@@ -156,4 +163,75 @@ align-items: center;
     display: flex;
     flex-direction: row;
     gap:200px
+}
+
+
+@media screen and (max-width:500px) {
+
+    .backdrop2{
+
+    }
+
+    .banner-content{
+        /* flex-direction: column; */
+        /* position: absolute; */
+        /* display: none; */
+        padding-top: 300px;
+    }
+
+    .poster{
+        top: 24px;
+        left: -360px;
+    }
+    .poster img{
+        margin-left: 360px;
+        width: 134px;
+        height: 200px;
+    }
+
+    .right-wrapper{
+        /* position: absolute; */
+        /* top:40px; */
+        /* left: 0; */
+    }
+
+    .title2{
+        left: -36px;
+        position: absolute;
+        gap: 8px;
+    }
+
+    .title2 p{
+        font-size: 18px;
+    }
+
+    .actions .btns{
+        display: none;
+    }
+
+    .actions{
+        position: absolute;
+        left: -12%;
+        bottom: -176px;
+    }
+
+    .tagline{
+        display: none;
+    }
+
+    .overview{
+        position: absolute;
+        top: 140%;
+        left: -36px;
+    }
+    .Banner{
+        height: 80vh;
+    }   
+    .crew-details{
+        
+        margin-top: 360px;
+       margin-left:  -340px;
+        gap:32px
+    }
+
 }
