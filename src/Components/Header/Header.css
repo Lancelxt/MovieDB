@@ -16,8 +16,39 @@ color:#FFF;
 font-weight: 600;
 }
 
-.left p{
+.left div{
     cursor: pointer;
+}
+
+.popup-main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+.popup-box{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 16px;
+    color: #000;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 0px 28px;
+    gap: 16px;
+    white-space: nowrap;
+    position: absolute;
+    top: 20px;
+    z-index: 4;
+    display: none;
+}
+
+.popup-box p{
+    padding:12px 0px ;
+}
+
+.popup-main:hover .popup-box{
+    display: block;
 }
 
 
