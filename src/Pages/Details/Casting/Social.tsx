@@ -67,8 +67,9 @@ const Social: React.FC<SocialProps> = () => {
                 </div>
             </div>
             <div className="review-content">
+              <div>
             {review?.content && review.content.split(' ').slice(0, 60).join(' ')}
-  {review?.content && review.content.split(' ').length > 60 && '...'}
+  {review?.content && review.content.split(' ').length > 60 && '...'}</div>
   <a style={{color:"#000"}} href={review?.url}>
   <span style={{textDecoration:"underline"}}>read the rest</span></a>
             </div>

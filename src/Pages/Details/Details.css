@@ -6,6 +6,9 @@
 
 
 @media screen and (max-width:500px) {
+    .Details{
+        overflow-x: hidden;
+    }
     .right-panel{
         display: none;
     }
