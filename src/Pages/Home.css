@@ -5,13 +5,14 @@
     border:0px solid #805be7;
     background-image: url('');
     padding: 30px 40px;
-    /* background-color: purple; */
     /* background-image: url(https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces_filter\(duotone,190235,ad47dd\)/lMnoYqPIAVL0YaLP5YjRy7iwaYv.jpg); */
-    background-image: url(https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces_filter\(duotone,190235,ad47dd\)/lMnoYqPIAVL0YaLP5YjRy7iwaYv.jpg);
-    /* background-image: linear-gradient(rgba(25, 2, 53, 0.5), rgba(173, 71, 221, 0.5)), url('https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces_filter/(duotone,190235,ad47dd/)/lMnoYqPIAVL0YaLP5YjRy7iwaYv.jpg'); */
+    /* background-image: url(./JoinBackdrop.jpg); */
+    /* background-image: url('./JoinBackdrop.jpg'); */
+    background-image: linear-gradient(rgba(106, 3, 165, 0.6), rgba(106, 3, 165, 0.6)), url('./JoinBackdrop.jpg');
+
 
     background-size: cover;
-    background-position: center center;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: row;

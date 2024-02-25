@@ -4,9 +4,10 @@
     flex-direction: column;
 margin-inline: auto;
 width: 60vw;
-height: 50vh;
+/* height: 50vh; */
 padding-left: 2rem;
 padding-top: 2rem;
+margin-bottom: 24px;
 }
 
 .Popular-Column{

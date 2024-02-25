@@ -4,7 +4,8 @@
     flex-direction: column;
 margin-inline: auto;
 width: 60vw;
-height: 50vh;
+/* height: 50vh; */
+margin-bottom: 24px;
 padding-left: 2rem;
 /* padding-top: 2rem; */
 }
