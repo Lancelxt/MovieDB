@@ -223,7 +223,9 @@ align-items: center;
         position: absolute;
         top: 140%;
         left: -36px;
+        font-size: 12px;
     }
+    
     .Banner{
         height: 80vh;
     }   
