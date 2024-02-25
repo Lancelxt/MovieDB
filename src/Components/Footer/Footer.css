@@ -1,8 +1,9 @@
 .Footer{
     background-color: #032541;
-    height: 32vh;
+    /* height: 32vh; */
     width: 100vw;
     padding-top: 48px;
+    padding-bottom: 48px;
     position: absolute;
     /* bottom: 0; */
 }
