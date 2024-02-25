@@ -71,6 +71,9 @@
     .user .userdetail{
         font-size: 16px;
     }
+    .switchingTabs .tabItems .tabItem{
+        font-size: 14px;
+    }
     .left-content{
         width: 80vw;
     }
