@@ -39,6 +39,9 @@
         width: 100vw;
 
     }
+    .recContainer{
+        width: 92vw;
+    }
     .head{
         gap:12px;
     }
