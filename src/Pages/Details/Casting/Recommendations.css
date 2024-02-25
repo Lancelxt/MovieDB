@@ -9,7 +9,7 @@
 
 .reCard{
     width: 250px;
-    height: 168px;
+    /* height: 168px; */
     display: flex;
     flex-direction: column;
     gap:4px;
