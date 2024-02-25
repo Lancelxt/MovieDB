@@ -140,3 +140,15 @@ font-size: 14.4px;
     left: 50%;
     z-index: 4;
 }
+
+.tabs2 p{
+    font-size: 17.6px;
+}
+
+
+@media screen and (max-width:500px) {
+    .tabs2 p{
+        font-size: 16px;
+    }
+
+}

@@ -32,28 +32,28 @@ const Media: React.FC<MediaProps> = () => {
         <div className="tabs2">
           <p
             className={activeTab === 'Most Popular' ? 'active2' : ''}
-            style={{ fontSize: "17.6px", fontWeight: 600, color: "#000" }}
+            style={{fontWeight: 600, color: "#000" }}
             onClick={() => handleTabClick('Most Popular')}
           >
             Most Popular
           </p>
           <p
             className={activeTab === 'videos' ? 'active2' : ''}
-            style={{ fontSize: "17.6px", fontWeight: 600, color: "#000" }}
+            style={{ fontWeight: 600, color: "#000" }}
             onClick={() => handleTabClick('videos')}
           >
             Videos
           </p>
           <p
             className={activeTab === 'backdrops' ? 'active2' : ''}
-            style={{ fontSize: "17.6px", fontWeight: 600, color: "#000" }}
+            style={{ fontWeight: 600, color: "#000" }}
             onClick={() => handleTabClick('backdrops')}
           >
             Backdrops
           </p>
           <p
             className={activeTab === 'posters' ? 'active2' : ''}
-            style={{ fontSize: "17.6px", fontWeight: 600, color: "#000" }}
+            style={{ fontWeight: 600, color: "#000" }}
             onClick={() => handleTabClick('posters')}
           >
             Posters
