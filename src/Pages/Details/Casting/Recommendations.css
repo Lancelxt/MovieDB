@@ -1,31 +1,30 @@
-.recommendations{
-    margin-left: 260px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 10px;
-    width: 1000px;
-
+.recommendations {
+  margin-left: 260px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  width: 1000px;
 }
 
-.reCard{
-    width: 250px;
-    /* height: 168px; */
-    display: flex;
-    flex-direction: column;
-    gap:4px;
+.reCard {
+  width: 250px;
+  /* height: 168px; */
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
-.bottom-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.bottom-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.recContainer{
-    display: flex;
-    flex-direction: row;
-    width: 1000px;
-    overflow: scroll;
-    gap:20px;
-    padding-top: 16px;
+.recContainer {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  overflow: scroll;
+  gap: 20px;
+  padding-top: 16px;
 }

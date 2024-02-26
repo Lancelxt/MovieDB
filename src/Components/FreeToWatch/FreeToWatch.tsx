@@ -9,24 +9,19 @@ import useFetch from "../../Hooks/useFetch";
 
 interface TrendingSectionProps {
   title: string;
-  
 }
 
-const FreeToWatch: React.FC<TrendingSectionProps> = ({ title}) => {
+const FreeToWatch: React.FC<TrendingSectionProps> = ({ title }) => {
   const [endpoint, setEndpoint] = useState<string>("day");
 
   const [tab, setTab] = useState<number>(0);
-const [poster,setPoster] = useState("")
+  const [poster, setPoster] = useState("");
   const { url } = useSelector((state: { home: HomeState }) => state.home);
   const { data, loading } = useFetch(`/trending/movie/${endpoint}`);
-
-
-
 
   const handleTabChange = (tabIndex: number) => {
     setTab(tabIndex);
   };
-
 
   const onTabChange = (tab: string) => {
     setEndpoint(tab === "Day" ? "day" : "week");
@@ -60,10 +55,6 @@ const [poster,setPoster] = useState("")
       setPoster(bg);
     }
   }, [data, tab, url.poster]);
-  
-
-
-
 
   return (
     <div className="FreeToWatchSection">
@@ -71,12 +62,13 @@ const [poster,setPoster] = useState("")
         <h2 style={{ marginRight: "2rem", fontWeight: "500" }}>{title}</h2>
         <SwitchTabs data={["Day", "Week"]} onTabChange={onTabChange} />
       </div>
-      <div className="FreeToWatch" >
-  {data && Array.isArray(data.results) && 
-    data.results.map((movie) => (
-      <MovieCard key={movie.id} movie={movie} />
-    ))}
-</div>
+      <div className="FreeToWatch">
+        {data &&
+          Array.isArray(data.results) &&
+          data.results.map((movie) => (
+            <MovieCard key={movie.id} movie={movie} />
+          ))}
+      </div>
     </div>
   );
 };

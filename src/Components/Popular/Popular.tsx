@@ -9,28 +9,21 @@ import useFetch from "../../Hooks/useFetch";
 
 interface PopularSectionProps {
   title: string;
-  
 }
 
-const Popular: React.FC<PopularSectionProps> = ({ title}) => {
+const Popular: React.FC<PopularSectionProps> = ({ title }) => {
   const [endpoint, setEndpoint] = useState<string>("/movie/now_playing");
 
   const [tab, setTab] = useState<number>(0);
-const [poster,setPoster] = useState("")
+  const [poster, setPoster] = useState("");
   const { url } = useSelector((state: { home: HomeState }) => state.home);
   const { data, loading } = useFetch(endpoint || "/movie/now_playing");
-
-
-
-
 
   const handleTabChange = (tabIndex: number) => {
     setTab(tabIndex);
   };
 
-
-    const onTabChange = (tab: string) => {
-
+  const onTabChange = (tab: string) => {
     switch (tab) {
       case "Streaming":
         setEndpoint("/movie/now_playing");
@@ -62,7 +55,6 @@ const [poster,setPoster] = useState("")
             },
           }
         );
-        
       } catch (error) {
         console.error(error);
       }
@@ -78,23 +70,23 @@ const [poster,setPoster] = useState("")
       setPoster(bg);
     }
   }, [data, tab, url.poster]);
-  
-
-
-
 
   return (
     <div className="PopularSection">
       <div className="Popular-Column">
         <h2 style={{ marginRight: "2rem", fontWeight: "500" }}>{title}</h2>
-        <SwitchTabs data={["Streaming", "On TV","For Rent","In Theaters"]} onTabChange={onTabChange} />
+        <SwitchTabs
+          data={["Streaming", "On TV", "For Rent", "In Theaters"]}
+          onTabChange={onTabChange}
+        />
       </div>
       <div className="Popular">
-  {data && Array.isArray(data.results) &&
-    data.results.map((movie) => (
-      <MovieCard key={movie.id} movie={movie} />
-    ))}
-</div>
+        {data &&
+          Array.isArray(data.results) &&
+          data.results.map((movie) => (
+            <MovieCard key={movie.id} movie={movie} />
+          ))}
+      </div>
     </div>
   );
 };

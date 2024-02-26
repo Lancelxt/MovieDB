@@ -1,100 +1,105 @@
-
- /* for details page */
-@media screen and (max-width:1366px) {
-    .Home{
-        overflow-x: hidden;
-    }
-    .backdrop{
-        width: 100vw;
-    }
-    .search{
-        width: 92vw;
-    }
-
-    .TrendingSection{
-        width: 100vw;
-    }
-    .PopularSection{
-        width: 100vw;
-    }
-    .FreeToWatchSection{
-        width: 100vw;
-    }
-    .Casting, .social ,.media, .recommendations{
-        margin-left: 40px;
-    }
-    .Casting{
-        margin-left: 40px;
-        padding-top: 8px;
-    }
-    .Casting{
-        margin-left: 40px;
-    }
-    .Casting{
-        margin-left: 40px;
-    }
-}
-
- /* for details page */
-@media screen and (max-width:800) {
-        .Home{
-            overflow-x: hidden;
-        }
-    .backdrop{
-        width: 100vw;
-    }
-    .search{
-        width: 92vw;
-    }
-
-    .TrendingSection{
-        width: 100vw;
-    }
-    .PopularSection{
-        width: 100vw;
-    }
-    .FreeToWatchSection{
-        width: 100vw;
-    }
-    .Casting, .social ,.media, .recommendations{
-        margin-left: 40px;
-    }
-    .Casting{
-        margin-left: 40px;
-        padding-top: 8px;
-    }
-    .Casting{
-        margin-left: 40px;
-    }
-    .Casting{
-        margin-left: 40px;
-    }
-
-}
-
-
-@media screen and (max-width:500px) {
-    .Home{
-        overflow-x: hidden;
-    }
-.backdrop{
+/* for details page */
+@media screen and (max-width: 1366px) {
+  .Home {
+    overflow-x: hidden;
+  }
+  .backdrop {
     width: 100vw;
-}
-.search{
+  }
+  .search {
     width: 92vw;
+  }
+
+  .TrendingSection {
+    width: 100vw;
+  }
+  .PopularSection {
+    width: 100vw;
+  }
+  .FreeToWatchSection {
+    width: 100vw;
+  }
+  .Casting,
+  .social,
+  .media,
+  .recommendations {
+    margin-left: 40px;
+  }
+  .Casting {
+    margin-left: 40px;
+    padding-top: 8px;
+  }
+  .Casting {
+    margin-left: 40px;
+  }
+  .Casting {
+    margin-left: 40px;
+  }
 }
 
-.TrendingSection{
+/* for details page */
+@media screen and (max-width: 800) {
+  .Home {
+    overflow-x: hidden;
+  }
+  .backdrop {
     width: 100vw;
-}
-.PopularSection{
+  }
+  .search {
+    width: 92vw;
+  }
+
+  .TrendingSection {
     width: 100vw;
-}
-.FreeToWatchSection{
+  }
+  .PopularSection {
     width: 100vw;
+  }
+  .FreeToWatchSection {
+    width: 100vw;
+  }
+  .Casting,
+  .social,
+  .media,
+  .recommendations {
+    margin-left: 40px;
+  }
+  .Casting {
+    margin-left: 40px;
+    padding-top: 8px;
+  }
+  .Casting {
+    margin-left: 40px;
+  }
+  .Casting {
+    margin-left: 40px;
+  }
 }
-.Casting, .social ,.media, .recommendations{
+
+@media screen and (max-width: 500px) {
+  .Home {
+    overflow-x: hidden;
+  }
+  .backdrop {
+    width: 100vw;
+  }
+  .search {
+    width: 92vw;
+  }
+
+  .TrendingSection {
+    width: 100vw;
+  }
+  .PopularSection {
+    width: 100vw;
+  }
+  .FreeToWatchSection {
+    width: 100vw;
+  }
+  .Casting,
+  .social,
+  .media,
+  .recommendations {
     margin-left: 12px;
-}
-
+  }
 }

@@ -1,239 +1,222 @@
-.Banner{
-    display: flex;
-    flex-direction: row;
-width: 100vw;
-height: 570px;
-justify-content: center;
-position: relative;
-/* backgroundImage: 'linear-gradient(to right, blue, lightblue)' */
+.Banner {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 570px;
+  justify-content: center;
+  position: relative;
+  /* backgroundImage: 'linear-gradient(to right, blue, lightblue)' */
 }
 
-.backdrop2{
-    background-size: cover;
-    /* filter: blur(4px); */
-    background-position: center center;
-    width: 100vw;
+.backdrop2 {
+  background-size: cover;
+  /* filter: blur(4px); */
+  background-position: center center;
+  width: 100vw;
 }
 
+.poster {
+  width: 300px;
+  height: 450px;
+  /* background-color: red; */
+  position: absolute;
+  left: -120px;
+  top: 60px;
+  padding-left: 80px;
+}
+.title2 {
+  /* position: absolute; */
+  left: 300px;
+}
 
-.poster{
-    width: 300px;
-    height: 450px;
-    /* background-color: red; */
+.title2 p {
+  font-size: 35.2px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.facts {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  gap: 8px;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+  padding-left: 28px;
+}
+
+.list li {
+  list-style-type: disc;
+}
+
+.actions {
+  /* position: absolute; */
+  left: 360px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  top: 300px;
+  align-items: center;
+  gap: 16px;
+}
+
+.btns {
+  background-color: rgb(3, 37, 65);
+  display: flex;
+  border-radius: 200px;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+}
+
+.poster img {
+  width: 300px;
+  height: 450px;
+}
+
+.score-circle {
+  width: 68px;
+  height: 68px;
+  background-color: black;
+  color: white;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.play {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.play:hover {
+  color: rgb(146, 144, 144);
+}
+
+.score {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.overview {
+  /* position: absolute; */
+  color: #ffff;
+  top: 0;
+  left: 28%;
+  width: 52vw;
+  text-align: justify;
+}
+
+.banner-content {
+  position: absolute;
+  height: 35vh;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding-top: 10vh;
+}
+
+.right-wrapper {
+  padding-left: 4vw;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 220px;
+  margin-top: -40px;
+  padding-left: 300px;
+}
+
+.title2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.crew-details {
+  color: #ffff;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+
+@media screen and (max-width: 500px) {
+  .backdrop2 {
+  }
+
+  .banner-content {
+    /* flex-direction: column; */
+    /* position: absolute; */
+    /* display: none; */
+    padding-top: 300px;
+  }
+
+  .poster {
+    top: 24px;
+    left: -360px;
+  }
+  .poster img {
+    margin-left: 360px;
+    width: 134px;
+    height: 200px;
+  }
+
+  .right-wrapper {
+    /* position: absolute; */
+    /* top:40px; */
+    /* left: 0; */
+  }
+
+  .title2 {
+    left: -36px;
     position: absolute;
-    left: -120px;
-    top:60px;
-    padding-left: 80px;
-    
-}
-.title2{
+    gap: 8px;
+  }
 
-    /* position: absolute; */
-    left: 300px;
-}
+  .title2 p {
+    font-size: 18px;
+  }
 
-.title2 p{
-    font-size: 35.2px;
-     font-weight: 700;
-    color:#FFF;
-}
+  .actions .btns {
+    display: none;
+  }
 
-.facts{
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
-    gap:8px;
-    align-items: center;
-}
-
-.list{
-    display: flex;
-    flex-direction: row;
-    gap:28px;
-    padding-left: 28px;
-}
-
-.list li{
-    list-style-type: disc;
-}
-
-
-
-
-.actions{
-    /* position: absolute; */
-    left: 360px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    top:300px;
-    align-items: center;
-    gap: 16px;
-}
-
-
-.btns{
-    background-color: rgb(3,37,65);
-    display: flex;
-    border-radius: 200px;
-    align-items: center;
-    justify-content: center;
-    width: 46px;
-    height: 46px;
-    cursor: pointer;
-}
-
-.poster img{
-    width: 300px;
-    height: 450px;
-}
-
-.score-circle{
-    width: 68px;
-    height: 68px;
-    background-color: black;
-    color: white;
-    display: flex; 
-    border-radius: 50%;
-    justify-content: center;
-align-items: center; 
-}
-
-
-.play{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap:4px;
-    cursor: pointer;
-}
-
-.play:hover{
-    color: rgb(146, 144, 144);
-}
-
-
-.score{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap:8px
-}
-
-
-.overview{
-    /* position: absolute; */
-    color:#FFFF;
-    top:0;
-    left: 28%;
-    width: 52vw;
-    text-align: justify;
-}
-
-.banner-content{
+  .actions {
     position: absolute;
-    height: 35vh;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    /* align-items: center; */
-    padding-top: 10vh;
-}
+    left: -12%;
+    bottom: -176px;
+  }
 
-.right-wrapper{
-    padding-left: 4vw;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding-left: 220px;
-    margin-top: -40px;
-    padding-left: 300px;
+  .tagline {
+    display: none;
+  }
 
-}
+  .overview {
+    position: absolute;
+    top: 140%;
+    left: -36px;
+    font-size: 12px;
+  }
 
-.title2{
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-
-
-.crew-details{
-    color: #FFFF;
-    display: flex;
-    flex-direction: row;
-    gap:200px
-}
-
-
-@media screen and (max-width:500px) {
-
-    .backdrop2{
-
-    }
-
-    .banner-content{
-        /* flex-direction: column; */
-        /* position: absolute; */
-        /* display: none; */
-        padding-top: 300px;
-    }
-
-    .poster{
-        top: 24px;
-        left: -360px;
-    }
-    .poster img{
-        margin-left: 360px;
-        width: 134px;
-        height: 200px;
-    }
-
-    .right-wrapper{
-        /* position: absolute; */
-        /* top:40px; */
-        /* left: 0; */
-    }
-
-    .title2{
-        left: -36px;
-        position: absolute;
-        gap: 8px;
-    }
-
-    .title2 p{
-        font-size: 18px;
-    }
-
-    .actions .btns{
-        display: none;
-    }
-
-    .actions{
-        position: absolute;
-        left: -12%;
-        bottom: -176px;
-    }
-
-    .tagline{
-        display: none;
-    }
-
-    .overview{
-        position: absolute;
-        top: 140%;
-        left: -36px;
-        font-size: 12px;
-    }
-    
-    .Banner{
-        height: 100vh;
-    }   
-    .crew-details{
-        
-        margin-top: 360px;
-       margin-left:  -340px;
-        gap:32px
-    }
-
+  .Banner {
+    height: 100vh;
+  }
+  .crew-details {
+    margin-top: 360px;
+    margin-left: -340px;
+    gap: 32px;
+  }
 }

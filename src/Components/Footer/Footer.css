@@ -1,73 +1,70 @@
-.Footer{
-    background-color: #032541;
-    /* height: 32vh; */
-    width: 100vw;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    position: absolute;
-    /* bottom: 0; */
+.Footer {
+  background-color: #032541;
+  /* height: 32vh; */
+  width: 100vw;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  position: absolute;
+  /* bottom: 0; */
 }
-.wrapper{
-    display: flex;
-    flex-direction: row;
-    gap:28px;
-/* border:1px solid #FFF; */
-   justify-content: center;
-    color: #FFF;
-    }
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+  /* border:1px solid #FFF; */
+  justify-content: center;
+  color: #fff;
+}
 
-    .logo{
-        width: 130px;
-        height: 94px;
-        margin-left: 100px;
-    }
+.logo {
+  width: 130px;
+  height: 94px;
+  margin-left: 100px;
+}
 
-    .username{
-        background-color: #FFF;
-        color:rgba(1,180,228);
-        font-size: 1.3em;
-        font-weight: 600;
-        padding: 8px 16px;
-        border:2px solid #FFF;
-        /* width: 180px; */
-        border-radius: 5px;
-        cursor: pointer;
-        align-items: center;
-        justify-content: center;
-        /* margin-left: 90px; */
-        margin-top: 20px;
-    }
+.username {
+  background-color: #fff;
+  color: rgba(1, 180, 228);
+  font-size: 1.3em;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: 2px solid #fff;
+  /* width: 180px; */
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 90px; */
+  margin-top: 20px;
+}
 
-    .columns{
-        padding-top: 40px;
-    }
+.columns {
+  padding-top: 40px;
+}
 
-    li{
-        list-style-type: none;
-    }
+li {
+  list-style-type: none;
+}
 
+@media screen and (max-width: 500px) {
+  .Footer {
+    overflow-x: hidden;
+    height: auto;
+  }
 
+  .wrapper {
+    display: block;
+    gap: 0px;
+    padding-inline: 40px;
+    padding-bottom: 40px;
+  }
 
-    @media screen and (max-width:500px) {
-        .Footer{
-            overflow-x: hidden;
-            height: auto;
-        }
+  .logo {
+    margin-left: 0px;
+  }
 
-        .wrapper{
-            display: block;
-            gap:0px;
-            padding-inline: 40px;
-            padding-bottom: 40px;
-        }
-
-        .logo{
-            margin-left: 0px;
-        }
-
-        .username{
-            width: 134px;
-            font-size: 0.6em;
-        }
-        
-    }
+  .username {
+    width: 134px;
+    font-size: 0.6em;
+  }
+}

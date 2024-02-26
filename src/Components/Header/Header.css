@@ -1,103 +1,101 @@
-.Header{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-padding-inline: 20vw;
-background-color: rgb(3,37,65);
-height: 6vh;
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-inline: 20vw;
+  background-color: rgb(3, 37, 65);
+  height: 6vh;
 }
-.left{
-display: flex;
-flex-direction: row;
-gap: 16px;
-align-items: center;
-justify-content: center;
-color:#FFF;
-font-weight: 600;
-}
-
-.left div{
-    cursor: pointer;
+.left {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
 }
 
-.popup-main{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: 2;
+.left div {
+  cursor: pointer;
 }
-.popup-box{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    margin-top: 16px;
-    color: #000;
-    border-radius: 8px;
-    font-weight: 400;
-    padding: 0px 28px;
-    gap: 16px;
-    white-space: nowrap;
-    position: absolute;
-    top: 20px;
-    z-index: 4;
+
+.popup-main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+.popup-box {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 16px;
+  color: #000;
+  border-radius: 8px;
+  font-weight: 400;
+  padding: 0px 28px;
+  gap: 16px;
+  white-space: nowrap;
+  position: absolute;
+  top: 20px;
+  z-index: 4;
+  display: none;
+}
+
+.popup-box p {
+  padding: 12px 0px;
+}
+
+.popup-main:hover .popup-box {
+  display: block;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+.lang {
+  border: 1px solid #fff;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.lang:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.3s ease-in;
+}
+
+.right p,
+.right img {
+  cursor: pointer;
+}
+
+.button {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .Header {
+    overflow-x: hidden; /* Add this line to prevent horizontal scrolling */
+    padding-inline: 120px;
+  }
+
+  .right {
     display: none;
-}
+  }
 
-.popup-box p{
-    padding:12px 0px ;
-}
+  .left > *:not(:first-child) {
+    display: none;
+  }
 
-.popup-main:hover .popup-box{
-    display: block;
-}
-
-
-.right{
-display: flex;
-flex-direction: row;
-gap: 30px;
-align-items: center;
-justify-content: center;
-color:#FFF;
-font-weight: 600;
-}
-
-.lang{
-    border: 1px solid #FFF;
-    padding: 2px 4px;
-    border-radius: 3px;
-}
-
-.lang:hover{
-    background-color: #FFF;
-    color:#000;
-    transition: 0.3s ease-in;
-}
-
-.right p, .right img{
-    cursor: pointer;
-}
-
-.button{
-    cursor: pointer;
-}
-
-
-@media screen and (max-width:500px) {
-    .Header {
-        overflow-x: hidden; /* Add this line to prevent horizontal scrolling */
-        padding-inline: 120px;
-    }
-
-    .right {
-        display: none;
-    }
-
-    .left > *:not(:first-child) {
-        display: none;
-    }
-
-    .left img {
-        
-    }
+  .left img {
+  }
 }
