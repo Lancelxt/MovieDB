@@ -68,7 +68,7 @@ const runtimeInMinutes = (data?.runtime?? 0) % 60;
   
         <div className="banner-content">
         <div className="poster">
-          <img loading='lazy' src={posterImg} alt="poster" style={{borderRadius: "8px"}} />
+          <img src={posterImg} alt="poster" style={{borderRadius: "8px"}} />
         </div>
         <div className="right-wrapper">
       <div className="title2">

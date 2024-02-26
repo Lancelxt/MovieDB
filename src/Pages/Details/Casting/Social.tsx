@@ -54,7 +54,7 @@ const Social: React.FC<SocialProps> = () => {
         <div>
         <div className="review-container">
             <div className="info">
-                <img loading='lazy' className='pfp' src={review?.author_details?.avatar_path ? `https://image.tmdb.org/t/p/original/${review?.author_details?.avatar_path}` : `${avatar}`}/>
+                <img className='pfp' src={review?.author_details?.avatar_path ? `https://image.tmdb.org/t/p/original/${review?.author_details?.avatar_path}` : `${avatar}`}/>
                 <div className="user">
                     <div className="userdetail">A review by {review?.author}</div>
                     <div className="authordetails">
@@ -80,7 +80,7 @@ const Social: React.FC<SocialProps> = () => {
       {activeTab === 'discussions' && (
         <div>
           <div className="discussion-container">
-          <img loading='lazy' className='pfp' src={review?.author_details?.avatar_path ? `https://image.tmdb.org/t/p/original/${review?.author_details?.avatar_path}` : `${avatar}`}/>
+          <img className='pfp' src={review?.author_details?.avatar_path ? `https://image.tmdb.org/t/p/original/${review?.author_details?.avatar_path}` : `${avatar}`}/>
         <p> "{review?.content && review.content.split(' ').slice(0, 11).join(' ')}
   {review?.content && review.content.split(' ').length > 12 && '...'}"</p>
   <p style={{marginLeft:"60px",fontSize:"14.4px",fontWeight:300}}>Open</p>

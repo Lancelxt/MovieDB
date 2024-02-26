@@ -15,7 +15,7 @@ const Recommendations = () => {
         <div className="recContainer">
         {recData?.results.slice(0, 10).map((result:any, index:number) => (
     <div className="reCard" key={index}>
-      <img loading='lazy' src={`https://image.tmdb.org/t/p/original${result?.backdrop_path}`} style={{ borderRadius: "8px" }} />
+      <img src={`https://image.tmdb.org/t/p/original${result?.backdrop_path}`} style={{ borderRadius: "8px" }} />
       <div className="bottom-section">
         <p>{result?.title}</p>
         <p>{Math.floor(result?.vote_average * 10)}%</p>
