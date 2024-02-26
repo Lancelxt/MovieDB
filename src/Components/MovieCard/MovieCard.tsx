@@ -36,7 +36,7 @@ navigate('/'+media_type+"/"+id)
   return (
     <div className='MovieCard'>
       <div className="imageContainer">
-        <img src={posterUrl} alt='Movie Banner' onClick={handleNavigate}/>
+        <img src={posterUrl} alt='Movie Banner' onClick={handleNavigate} loading='lazy'/>
         <div className="consensus">
           <CircleRating rating={Number(percentageRating)} />
         </div>

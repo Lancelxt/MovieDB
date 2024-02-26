@@ -66,11 +66,11 @@ const Media: React.FC<MediaProps> = () => {
                                                     setShow(true);
                                                     setVideoId(VideoData?.results?.[1].key);
                                                 }}> 
-        <img src={`https://img.youtube.com/vi/${VideoData?.results[1]?.key}/mqdefault.jpg`} style={{width:"533px", height:"300px",borderTopLeftRadius:"12px",borderBottomLeftRadius:"12px"}} />
+        <img src={`https://img.youtube.com/vi/${VideoData?.results[1]?.key}/mqdefault.jpg`} loading='lazy' style={{width:"533px", height:"300px",borderTopLeftRadius:"12px",borderBottomLeftRadius:"12px"}} />
        <div className="play-circle"><PlayCircleFill size={40} color='#FFF'/></div>
         </div>
-        <img src={`https://image.tmdb.org/t/p/original${ImageData?.backdrops[0]?.file_path}`} style={{width:"533px", height:"300px"}} />
-        <img src={`https://image.tmdb.org/t/p/original${ImageData?.posters[0]?.file_path}`} style={{width:"200px", height:"300px",borderTopRightRadius:"12px",borderBottomRightRadius:"12px"}}/>
+        <img loading='lazy' src={`https://image.tmdb.org/t/p/original${ImageData?.backdrops[0]?.file_path}`} style={{width:"533px", height:"300px"}} />
+        <img loading='lazy' src={`https://image.tmdb.org/t/p/original${ImageData?.posters[0]?.file_path}`} style={{width:"200px", height:"300px",borderTopRightRadius:"12px",borderBottomRightRadius:"12px"}}/>
         </div>
         
 
@@ -82,35 +82,35 @@ const Media: React.FC<MediaProps> = () => {
                                                     setShow(true);
                                                     setVideoId(VideoData?.results?.[0].key);
                                                 }}> 
-        <img src={`https://img.youtube.com/vi/${VideoData?.results[0]?.key}/mqdefault.jpg`} style={{width:"533px", height:"300px",borderTopLeftRadius:"12px",borderBottomLeftRadius:"12px"}} />
+        <img loading='lazy' src={`https://img.youtube.com/vi/${VideoData?.results[0]?.key}/mqdefault.jpg`} style={{width:"533px", height:"300px",borderTopLeftRadius:"12px",borderBottomLeftRadius:"12px"}} />
        <div className="play-circle"><PlayCircleFill size={40} color='#FFF'/></div>
         </div>
         <div className='video-thumbnail'onClick={() => {
                                                     setShow(true);
                                                     setVideoId(VideoData?.results?.[1].key);
                                                 }}> 
-        <img src={`https://img.youtube.com/vi/${VideoData?.results[1]?.key}/mqdefault.jpg`} style={{width:"533px", height:"300px"}} />
+        <img loading='lazy' src={`https://img.youtube.com/vi/${VideoData?.results[1]?.key}/mqdefault.jpg`} style={{width:"533px", height:"300px"}} />
        <div className="play-circle"><PlayCircleFill size={40} color='#FFF'/></div>
         </div>
         <div className='video-thumbnail'onClick={() => {
                                                     setShow(true);
                                                     setVideoId(VideoData?.results?.[2].key);
                                                 }}> 
-        <img src={`https://img.youtube.com/vi/${VideoData?.results[2]?.key}/mqdefault.jpg`} style={{width:"533px", height:"300px"}} />
+        <img loading='lazy' src={`https://img.youtube.com/vi/${VideoData?.results[2]?.key}/mqdefault.jpg`} style={{width:"533px", height:"300px"}} />
        <div className="play-circle"><PlayCircleFill size={40} color='#FFF'/></div>
         </div>
         <div className='video-thumbnail'onClick={() => {
                                                     setShow(true);
                                                     setVideoId(VideoData?.results?.[3].key);
                                                 }}> 
-        <img src={`https://img.youtube.com/vi/${VideoData?.results[3]?.key}/mqdefault.jpg`} style={{width:"533px", height:"300px"}} />
+        <img loading='lazy' src={`https://img.youtube.com/vi/${VideoData?.results[3]?.key}/mqdefault.jpg`} style={{width:"533px", height:"300px"}} />
        <div className="play-circle"><PlayCircleFill size={40} color='#FFF'/></div>
         </div>
         <div className='video-thumbnail'onClick={() => {
                                                     setShow(true);
                                                     setVideoId(VideoData?.results?.[4].key);
                                                 }}> 
-        <img src={`https://img.youtube.com/vi/${VideoData?.results[4]?.key}/mqdefault.jpg`} style={{width:"533px", height:"300px",borderTopRightRadius:"12px",borderBottomRightRadius:"8px"}} />
+        <img loading='lazy' src={`https://img.youtube.com/vi/${VideoData?.results[4]?.key}/mqdefault.jpg`} style={{width:"533px", height:"300px",borderTopRightRadius:"12px",borderBottomRightRadius:"8px"}} />
        <div className="play-circle"><PlayCircleFill size={40} color='#FFF'/></div>
         </div>
         <div style={{display:"flex",flexDirection:"row",alignItems:"center",marginLeft:"12px",cursor:"pointer"}}>View More <ArrowRight size={20}/></div>
@@ -122,7 +122,7 @@ const Media: React.FC<MediaProps> = () => {
       {activeTab === 'backdrops' && (
         <div>
           <div className='popular-section'>
-        <img src={`https://image.tmdb.org/t/p/original${ImageData?.backdrops[0]?.file_path}`} style={{width:"533px", height:"300px",borderTopLeftRadius:"12px",borderBottomLeftRadius:"12px"}} />
+        <img  src={`https://image.tmdb.org/t/p/original${ImageData?.backdrops[0]?.file_path}`} style={{width:"533px", height:"300px",borderTopLeftRadius:"12px",borderBottomLeftRadius:"12px"}} />
         <img src={`https://image.tmdb.org/t/p/original${ImageData?.backdrops[1]?.file_path}`} style={{width:"533px", height:"300px"}} />
         <img src={`https://image.tmdb.org/t/p/original${ImageData?.backdrops[2]?.file_path}`} style={{width:"533px", height:"300px"}} />
         <img src={`https://image.tmdb.org/t/p/original${ImageData?.backdrops[3]?.file_path}`} style={{width:"533px", height:"300px"}} />
@@ -136,13 +136,13 @@ const Media: React.FC<MediaProps> = () => {
       {activeTab === 'posters' && (
         <div>
             <div className='popular-section'>
-        <img src={`https://image.tmdb.org/t/p/original${ImageData?.posters[0].file_path}`} style={{width:"533px", height:"300px",borderTopLeftRadius:"12px",borderBottomLeftRadius:"12px"}} />
-        <img src={`https://image.tmdb.org/t/p/original${ImageData?.posters[1].file_path}`} style={{width:"533px", height:"300px"}} />
-        <img src={`https://image.tmdb.org/t/p/original${ImageData?.posters[2].file_path}`} style={{width:"533px", height:"300px"}} />
-        <img src={`https://image.tmdb.org/t/p/original${ImageData?.posters[3].file_path}`} style={{width:"533px", height:"300px"}} />
-        <img src={`https://image.tmdb.org/t/p/original${ImageData?.posters[4].file_path}`} style={{width:"533px", height:"300px",borderTopRightRadius:"12px",borderBottomRightRadius:"12px"}} />
-        <img src={`https://image.tmdb.org/t/p/original${ImageData?.posters[5].file_path}`} style={{width:"533px", height:"300px",borderTopRightRadius:"12px",borderBottomRightRadius:"12px"}} />
-        <img src={`https://image.tmdb.org/t/p/original${ImageData?.posters[6].file_path}`} style={{width:"533px", height:"300px",borderTopRightRadius:"12px",borderBottomRightRadius:"12px"}} />
+        <img loading='lazy' src={`https://image.tmdb.org/t/p/original${ImageData?.posters[0].file_path}`} style={{width:"533px", height:"300px",borderTopLeftRadius:"12px",borderBottomLeftRadius:"12px"}} />
+        <img loading='lazy' src={`https://image.tmdb.org/t/p/original${ImageData?.posters[1].file_path}`} style={{width:"533px", height:"300px"}} />
+        <img loading='lazy' src={`https://image.tmdb.org/t/p/original${ImageData?.posters[2].file_path}`} style={{width:"533px", height:"300px"}} />
+        <img loading='lazy' src={`https://image.tmdb.org/t/p/original${ImageData?.posters[3].file_path}`} style={{width:"533px", height:"300px"}} />
+        <img loading='lazy' src={`https://image.tmdb.org/t/p/original${ImageData?.posters[4].file_path}`} style={{width:"533px", height:"300px",borderTopRightRadius:"12px",borderBottomRightRadius:"12px"}} />
+        <img loading='lazy' src={`https://image.tmdb.org/t/p/original${ImageData?.posters[5].file_path}`} style={{width:"533px", height:"300px",borderTopRightRadius:"12px",borderBottomRightRadius:"12px"}} />
+        <img loading='lazy' src={`https://image.tmdb.org/t/p/original${ImageData?.posters[6].file_path}`} style={{width:"533px", height:"300px",borderTopRightRadius:"12px",borderBottomRightRadius:"12px"}} />
         <div style={{display:"flex",flexDirection:"row",alignItems:"center",marginLeft:"12px",cursor:"pointer"}}>View More <ArrowRight size={20}/></div>
         </div>
         
